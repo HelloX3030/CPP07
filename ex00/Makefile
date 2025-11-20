@@ -10,10 +10,10 @@ vpath %.hpp include/
 vpath %.cpp src/
 
 # .h and .hpp files
-H_FILES := Base.hpp A.hpp B.hpp C.hpp
+H_FILES := whatever.hpp
 
 # .cpp source files
-SRC_FILES := main.cpp Base.cpp
+SRC_FILES := main.cpp
 
 # Object directory and object files
 OBJ_DIR := obj
