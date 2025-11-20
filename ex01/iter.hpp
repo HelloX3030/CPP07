@@ -1,6 +1,8 @@
 #pragma once
 
 #include <cstddef>
+#include <iostream>
+#include <string>
 
 template <typename T>
 void iter(T *array, const size_t length, void (*func)(T&)) {
@@ -17,14 +19,15 @@ void iter(T *array, const size_t length, void (*func)(const T&)) {
 }
 
 template <typename T>
-void print(const T &array, const size_t length) {
-    for (size_t i = 0; i < length; ++i) {
-        std::cout << array[i] << " ";
-    }
-    std::cout << std::endl;
-}
-
-template <typename T>
 void change_value(T &value) {
     value += 42;
+}
+
+void set_string(std::string &value) {
+    value = "changed";
+}
+
+template<typename T>
+void print_value(const T& value) {
+    std::cout << value << " ";
 }
