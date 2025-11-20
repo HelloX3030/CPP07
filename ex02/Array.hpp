@@ -6,7 +6,7 @@ template <typename T>
 class Array {
     private:
         T* data;
-        unsigned int size;
+        unsigned int _size;
 
     public:
         Array(unsigned int n);
@@ -19,6 +19,7 @@ class Array {
 
         // Operator
         T& operator[](unsigned int index);
+        size_t size() const;
 };
 
 #include "Array.tpp"
