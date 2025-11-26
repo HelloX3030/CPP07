@@ -5,7 +5,7 @@
 template <typename T>
 class Array {
     private:
-        T* data;
+        T* _data;
         unsigned int _size;
 
     public:
