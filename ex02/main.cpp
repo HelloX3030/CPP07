@@ -68,6 +68,7 @@ static void custom_tests()
         }
         std::cout << std::endl;
         std::cout << "Test wrong Access" << std::endl;
+        std::cout << "Accessing index 200 of string Array of size: " << arr.size() << std::endl;
         try {
             std::cout << arr[200] << std::endl;
         } catch (const std::exception& e) {
